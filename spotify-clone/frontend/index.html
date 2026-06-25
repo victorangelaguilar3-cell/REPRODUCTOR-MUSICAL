@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🎵 Clon Spotify</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🎧 Mi Spotify</h1>
+      <input type="text" id="searchInput" placeholder="Buscar canción..." />
+    </header>
+
+    <main>
+      <section id="playlist">
+        <h2>Lista de canciones</h2>
+        <ul id="songList"></ul>
+      </section>
+
+      <section id="player">
+        <div id="nowPlaying">
+          <strong>🎵 Reproduciendo:</strong> <span id="currentSong">Ninguna</span>
+        </div>
+        <audio id="audioPlayer" controls></audio>
+        <div id="controls">
+          <button id="prevBtn">⏮️</button>
+          <button id="playPauseBtn">▶️</button>
+          <button id="nextBtn">⏭️</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

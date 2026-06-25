@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  background: #121212;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  background: #1e1e1e;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  color: #1db954;
+  font-size: 2rem;
+}
+
+#searchInput {
+  padding: 0.6rem 1rem;
+  border-radius: 30px;
+  border: none;
+  width: 200px;
+  background: #2a2a2a;
+  color: #fff;
+  outline: none;
+}
+
+#searchInput::placeholder {
+  color: #aaa;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#playlist ul {
+  list-style: none;
+  max-height: 300px;
+  overflow-y: auto;
+  background: #2a2a2a;
+  border-radius: 12px;
+  padding: 0.5rem;
+}
+
+#playlist li {
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid #333;
+  cursor: pointer;
+  transition: 0.2s;
+  display: flex;
+  justify-content: space-between;
+}
+
+#playlist li:hover {
+  background: #3a3a3a;
+  border-radius: 8px;
+}
+
+#playlist li.active {
+  background: #1db954;
+  color: #000;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+#player {
+  background: #282828;
+  padding: 1.5rem;
+  border-radius: 16px;
+  text-align: center;
+}
+
+#nowPlaying {
+  margin-bottom: 1rem;
+  color: #b3b3b3;
+}
+
+#audioPlayer {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 30px;
+}
+
+#controls button {
+  background: #1db954;
+  border: none;
+  color: #000;
+  font-size: 1.5rem;
+  padding: 0.5rem 1.2rem;
+  margin: 0 0.5rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: bold;
+}
+
+#controls button:hover {
+  background: #1ed760;
+  transform: scale(1.05);
+}
